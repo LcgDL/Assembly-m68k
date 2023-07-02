@@ -7,7 +7,7 @@ Minimal Assembly-m68k code for 'Assembly-m68k custom editor' (under development)
 
 Files:
 
-- demo.asm : testing code for 
+- demo.asm : testing code for Assembly-m68k
 
 - if_else :  basic 'if-else statement' 
 

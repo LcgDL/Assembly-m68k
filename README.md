@@ -1,14 +1,14 @@
 # Assembly-m68k
 Code for Assembly-m68k editor
 
-Code for Assembly-m68k editor (under development: pseudo code editor for Assembly-m68k).
+Minimal Assembly-m68k code for 'Assembly-m68k' custom editor (under development), 
 
 -> The purpose of this project is to facilitate the learning of the assembly language family.
 
 Files:
 
-demo.asm : 
+demo.asm : testing code for 
 
-if_else :
+if_else :  basic 'if-else statement' 
 
 

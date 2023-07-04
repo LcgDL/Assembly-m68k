@@ -7,10 +7,14 @@ Minimal Assembly-m68k code for 'Assembly-m68k custom editor' (under development:
 
 Files:
 
-- demo.asm : testing code for Assembly-m68k
+- demo.asm : testing code for Assembly-m68k.
 
-- if_else.asm :  basic 'if-else statement'
+- if_else.asm :  basic 'if-else statement'.
 
-- callMulti.asm: function to be call.
+- multi.asm : program implementing a multiplication.
+
+- callMulti.asm : function to be call.
+
+
 
 

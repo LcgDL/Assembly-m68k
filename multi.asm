@@ -9,7 +9,7 @@ subi r2,6
 br mul
 
 mul:
-#Auxiliary register
+#Auxiliary registers
 movi r0,0
 movi r10,0
 
@@ -34,4 +34,4 @@ br while
 
 end:
 halt
-#result=9450
+#result in r0=9450

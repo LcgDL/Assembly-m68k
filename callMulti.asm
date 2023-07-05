@@ -1,4 +1,4 @@
-#Calculate: 10 - 12 + 5
+#Calculate: 10 * 12 + 5
 movi r1,10
 movi r2,12
 movi r3,5

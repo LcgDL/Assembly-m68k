@@ -7,6 +7,7 @@ br mul
 
 continue:
 addu r0,r3
+# Result: r0=125
 halt
 
 mul:
@@ -35,4 +36,3 @@ br while
 
 end:
 br continue
-# Solution in r0=125

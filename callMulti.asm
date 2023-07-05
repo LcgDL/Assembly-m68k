@@ -34,5 +34,5 @@ lsri r2,1
 br while
 
 end:
-br weiter
+br continue
 # Solution in r0

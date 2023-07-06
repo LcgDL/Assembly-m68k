@@ -1,4 +1,4 @@
-##Calculate: 105*90
+#Calculate: 105*90
 #r1 = 105
 movi r1,6
 lsli r1,4

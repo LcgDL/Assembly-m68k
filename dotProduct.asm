@@ -33,7 +33,7 @@ ldw r2,r14,3
 call mull
 
 addu r0,r3
-# Result r0=11
+# Result r0=11 (3+8)
 halt
 
 #Function

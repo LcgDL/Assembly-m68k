@@ -20,13 +20,14 @@ stw r1,r0,3
 bseti r14,7
 subi r14,8
 
-#Take values from memory for mult.
+#Take values from memory for mult.:(1*3)
 ldw r1,r14,0
 ldw r2,r14,2
 call mull
 
 mov r3, r0
 
+#Take values from memory for mult.:(2*4)
 ldw r1,r14,1
 ldw r2,r14,3
 call mull
@@ -35,6 +36,7 @@ addu r0,r3
 # Result r0=11
 halt
 
+#Function
 mull:
 movi r0,0
 movi r10,0

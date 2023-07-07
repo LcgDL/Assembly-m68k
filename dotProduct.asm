@@ -1,4 +1,5 @@
 #Dot product: (1*3)+(2*4)
+#Place for the vector values: r0=120
 #r0=120
 movi r0,1
 lsli r0,7

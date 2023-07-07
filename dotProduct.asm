@@ -1,11 +1,11 @@
-#Dot product
+#Dot product: (1*3)+(2*4)
 #r0=120
 movi r0,1
 lsli r0,7
 subi r0,8
 
 #Write vector values to memory
-#(1*3)+(2*4)
+#Values: 1,2,3,4
 movi r1,1
 stw r1,r0,0
 movi r1,2

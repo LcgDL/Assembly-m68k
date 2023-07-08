@@ -15,9 +15,9 @@ Files:
 
 - callMulti.asm : function to be call.
 
-- dotProduct:
+- dotProduct.asm: program for calculating the scalar product of two vectors.
 
-- stack:
+- stack.asm: program implementing a stack.
 
 
 

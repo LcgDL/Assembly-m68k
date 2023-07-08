@@ -17,6 +17,8 @@ Files:
 
 - dotProduct:
 
+- stack:
+
 
 
 

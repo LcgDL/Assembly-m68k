@@ -19,7 +19,7 @@ Files:
 
 - stack.asm: program implementing a stack.
 
-- gcd.asm:
+- gcd.asm: program to find the largest positive integer that divides each of two integers.
 
 
 

@@ -20,19 +20,20 @@ stw r15,r14
 cmpgt r7,r10
 bf potenz_else
 
+#exponentiation(b,(e-1)) ; b unchanged
 subi r7,1
 call exponentiation 
 
 mov r2,r0
 mov r1,r6
 
+# b*potenz(b,(e-1))
 movi r0,0
 while:
 cmpne r2,r10
 bf exponentiation_end
 mov r9,r2
 andi r9,1
-
 cmpeq r9,r10
 bf else
 lsli r1,1

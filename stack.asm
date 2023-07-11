@@ -20,7 +20,7 @@ stw r15,r14
 cmpgt r7,r10
 bf exponentiation_else
 
-#exponentiation(b,(e-1)) => b unchanged
+#exponentiation(b,(e-1)) => b is unchanged
 subi r7,1
 call exponentiation 
 

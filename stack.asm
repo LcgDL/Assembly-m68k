@@ -4,7 +4,7 @@ subi r14,1
 
 #Help register
 movi r10,0
-#Basis - Exponent
+#Basis - Exponent: 3^5 = 243 
 movi r6,3
 movi r7,5
 
@@ -18,7 +18,7 @@ stw r15,r14
 
 #If-condition
 cmpgt r7,r10
-bf potenz_else
+bf exponentiation_else
 
 #exponentiation(b,(e-1)) ; b unchanged
 subi r7,1
@@ -27,7 +27,7 @@ call exponentiation
 mov r2,r0
 mov r1,r6
 
-# b*potenz(b,(e-1))
+# b*potenz(b,(e-1)) => 243 in r0
 movi r0,0
 while:
 cmpne r2,r10
@@ -49,7 +49,7 @@ br while
 exponentiation_else:
 movi r0,1
 
-exponentiation_ende:
+exponentiation_end:
 ldw r15,r14
 addi r14,2
 jmp r15 

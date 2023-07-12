@@ -1,4 +1,5 @@
 #Greatest common divisor (GCD)
+#GCD(9,6)
 movi r10, 9
 movi r11, 6
 call gcd
@@ -24,4 +25,5 @@ subu r11,r0
 br while
 
 end:
+# Result: r0=3
 jmp r15

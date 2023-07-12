@@ -52,4 +52,5 @@ movi r0,1
 exponentiation_end:
 ldw r15,r14
 addi r14,2
+# Result: r0=243
 jmp r15 

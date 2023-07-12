@@ -60,4 +60,5 @@ lsri r2,1
 br while
 
 ende:
+# Result: r0=11
 jmp r15 

@@ -21,6 +21,8 @@ Files:
 
 - gcd.asm: program to find the largest positive integer that divides each of two integers.
 
+- fibo.asm: fibonacci sequence implementation
+
 
 
 

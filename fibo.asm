@@ -1,9 +1,14 @@
+# Calling 'fun' with r8=6
+movi r8,6
+call fib
+halt
+
 #Call-Stack 
 fib:
 # Stack Pointer
 movi r14, 0
 subi r14, 1
-# Hilfsregister
+# Help registers
 movi r1, 1
 movi r2, 2
 
@@ -13,21 +18,21 @@ bt sonst
 cmpeq r8, r2
 bt sonst 
 
-# Push - Rucksprungadresse
+# Push - Return address
 subi r14, 2
 stw r15, r14, 0
-# r8-Wert in r14 schreiben
+# write r8-Wert in r14 
 subi r14, 2
 stw r8, r14, 0
 # call (n-1)
 subi r8, 1
 call wenn
 
-# r8 zwischenspeichern
+# r8 temporarily save: cache
 mov r5, r8
-# oberster Wert von r14 wieder in r8 schreiben
+# write top value of r14 back to r8
 ldw r8, r14, 0
-# ??? Zwischenspeichern (r15) in r14 schreiben
+# ??? Write buffer (r15) to r14
 subi r14, 2
 stw r5, r14, 0
 
@@ -35,10 +40,10 @@ stw r5, r14, 0
 subi r8, 2
 call wenn
 
-# r8 zwischenspeichern
+# r8 temporarily save: cache
 mov r4, r8
 
-# ??? Wert in r5 laden
+# ??? Load value in r5
 ldw r5, r14, 0
 addi r14, 2
 # ???
@@ -47,7 +52,7 @@ addi r14, 2
 # pop
 ldw r15, r14, 0
 addi r14, 2
-# Wert wieder in r8 schreiben
+# Write value back to r8
 mov r8, r5
 # ergebnis= a+b
 addu r8, r4

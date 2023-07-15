@@ -28,7 +28,7 @@ stw r8, r14, 0
 subi r8, 1
 call wenn
 
-# r8 temporarily save: cache
+# r8? temporarily save: cache
 mov r5, r8
 # write top value of r14 back to r8
 ldw r8, r14, 0
@@ -40,7 +40,7 @@ stw r5, r14, 0
 subi r8, 2
 call wenn
 
-# r8 temporarily save: cache
+# r8? temporarily save: cache
 mov r4, r8
 
 # ??? Load value in r5

@@ -54,7 +54,7 @@ ldw r15, r14, 0
 addi r14, 2
 # Write value back to r8
 mov r8, r5
-# ergebnis= a+b
+# Result = a+b
 addu r8, r4
 jmp r15
 

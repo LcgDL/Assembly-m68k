@@ -12,7 +12,7 @@ subi r14, 1
 movi r1, 1
 movi r2, 2
 
-wenn:
+if:
 cmpeq r8, r1
 bt sonst
 cmpeq r8, r2
@@ -26,7 +26,7 @@ subi r14, 2
 stw r8, r14, 0
 # call (n-1)
 subi r8, 1
-call wenn
+call if
 
 # r8? temporarily save: cache
 mov r5, r8

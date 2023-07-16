@@ -38,7 +38,7 @@ stw r5, r14, 0
 
 #call (n-2)
 subi r8, 2
-call wenn
+call if
 
 # r8? temporarily save: cache
 mov r4, r8

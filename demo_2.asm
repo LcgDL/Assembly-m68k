@@ -7,7 +7,7 @@ lsli r0, 4    #2777*16 = 44432
 movi r1, 14
 lsli r1, 4    #r1=224
 addi r1, 11
-lsli r1, 4	  #235*16 = 3760
+lsli r1, 4	#235*16 = 3760
 addi r1, 6
 lsli r1, 4    #3766*16= 60256
 xor r0, r1    

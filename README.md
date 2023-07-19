@@ -21,10 +21,10 @@ Files:
 
 - gcd.asm : program to find the largest positive integer that divides each of two integers
 
-- demo_2.asm :
-
-
 - fibo.asm: programm to find a fibonacci sequence.
+
+- demo_2.asm: testing code for Assembly-m68k, using 'xor' command.
+			  
 
 
 

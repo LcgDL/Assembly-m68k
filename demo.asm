@@ -1,8 +1,9 @@
 # Set numbers in memory
 #00 002
-movi r9, 1   #r9=1
-lsli r9, 8   #1*2^8 => r9=256
-movi r8, 2   #r8=2
+movi r9, 1 
+#1*2^8 => r9=256
+lsli r9, 8   
+movi r8, 2
 stw r8,r9
 #00 0e
 movi r7, 1

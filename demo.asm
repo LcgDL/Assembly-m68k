@@ -4,7 +4,10 @@ movi r9, 1
 #1*2^8 => r9=256
 lsli r9, 8   
 movi r8, 2
+#MEM[256] = 2 
+#256-deci = 100-hex (MEM): 0100:0002
 stw r8,r9
+
 #00 0e
 movi r7, 1
 lsli r7, 8

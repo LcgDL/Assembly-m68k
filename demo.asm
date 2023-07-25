@@ -1,5 +1,5 @@
 # Set numbers in memory
-#00 002
+#r9=1
 movi r9, 1 
 #1*2^8 => r9=256
 lsli r9, 8   

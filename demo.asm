@@ -5,7 +5,7 @@ movi r9, 1
 lsli r9, 8   
 movi r8, 2
    #r9:MEM[256] = 2 
-   #256-deci = 100-hex (MEM): 0100:0002
+   #256-deci = 100-hex (MEM): 0x0100: 0002 (16 bit Group)
 stw r8,r9
    #r5=2 <- MEM[256] = 2
 ldw r5,r9

@@ -1,12 +1,15 @@
 # Set numbers in memory
-#r9=1
+   #r9=1
 movi r9, 1 
-#1*2^8 => r9=256
+   #1*2^8 => r9=256
 lsli r9, 8   
 movi r8, 2
-#MEM[256] = 2 
-#256-deci = 100-hex (MEM): 0100:0002
+   #r9:MEM[256] = 2 
+   #256-deci = 100-hex (MEM): 0100:0002
 stw r8,r9
+   #r5=2 <- MEM[256] = 2
+ldw r5,r9
+
 
 #00 0e
 movi r7, 1

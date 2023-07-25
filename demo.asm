@@ -10,7 +10,6 @@ stw r8,r9
    #r5=2 <- MEM[256] = 2
 ldw r5,r9
 
-
 #00 0e
 movi r7, 1
 lsli r7, 8

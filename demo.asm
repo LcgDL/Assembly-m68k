@@ -11,9 +11,13 @@ stw r8,r9
 ldw r5,r9
 
 #00 0e
+   #r7=1
 movi r7, 1
+   #1*2^8 => r7=256
 lsli r7, 8
+   #r7+2 => 258
 addi r7,2
+
 movi r6, 14
 stw r6,r7
 #00 1f = 31

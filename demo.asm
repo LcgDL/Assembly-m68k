@@ -17,9 +17,10 @@ movi r7, 1
 lsli r7, 8
    #r7+2 => 258
 addi r7,2
-
 movi r6, 14
+   #258-deci = 102-hex (MEM): 0x0102: 000e (16 bit Group)
 stw r6,r7
+
 #00 1f = 31
 movi r10, 1
 lsli r10, 8

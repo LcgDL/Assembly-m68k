@@ -1,4 +1,5 @@
 #SET NUMBERS IN MEMORY
+#00 02
    #r9=1
 movi r9, 1 
    #1*2^8 => r9=256

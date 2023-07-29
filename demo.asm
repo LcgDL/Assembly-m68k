@@ -48,8 +48,8 @@ lsli r0, 8
 movi r1, 0
 movi r2, 0
    # r3=0 <- MEM[256] = 0
-    # movi r9,9 
-    # stw r9,r0
+     # movi r9,9 
+     # stw r9,r0
 ldw r3, r0
 
 loop:

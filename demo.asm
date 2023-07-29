@@ -20,7 +20,7 @@ lsli r7, 8
    #r7+2 => 258
 addi r7,2
 movi r6, 14
-   #258-deci = 102-hex (MEM): 0x0102: 000e
+   #258-deci = 102-hex (MEM): 0x0102: 0000 000e
    #(16 bit Group: 8bits-Adresse[258:00] _ 8bits-Value=0e)
 stw r6,r7
 

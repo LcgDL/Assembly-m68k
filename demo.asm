@@ -26,11 +26,17 @@ stw r6,r7
 
 #00 1f = 31
 movi r10, 1
+   #1*2^8 => r10=256
 lsli r10, 8
+   #r10=260
 addi r10, 4
 movi r5, 1
+   #1*2^5 => r5=32
 lsli r5, 5
+   #r5=31
 subi r5, 1
+   #260-deci = 104-hex (MEM): 0x0100: 0000 0000 001f
+   #(16 bit Group: 8bits-Adresse[260:00] _ 8bits-Value=1f)
 stw r5,r10
 
 #Execution

@@ -40,10 +40,16 @@ subi r5, 1
 stw r5,r10
 
 #Execution
+   #r0=1
 movi r0, 1
+   #1*2^8 => r0=256
 lsli r0, 8
+   #r1=0 ; r2=0
 movi r1, 0
 movi r2, 0
+   # r3=0 <- MEM[256] = 0
+    # movi r9,9 
+    # stw r9,r0
 ldw r3, r0
 
 loop:

@@ -59,6 +59,7 @@ bt end
 
    #r0=258
 addi r0, 2
+   #r4=???
 ldw r4, r0
 subi r3, 1
 addu r2, r4

@@ -53,6 +53,7 @@ movi r2, 0
 ldw r3, r0
 
 loop:
+   #?(r3[2]==r1[0])
 cmpeq r3, r1
 bt end
 

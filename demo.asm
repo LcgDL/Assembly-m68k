@@ -6,7 +6,7 @@ movi r9, 1
 lsli r9, 8   
 movi r8, 2
    #r9:MEM[256] = 2 
-   #256-deci = 100-hex (MEM): 0x0100: 0002 
+   #256-deci = 100-hex (MEM): 0x0100: 0002 0000 0000
    #(16 bit Group: 8bits-Adresse[256:00] _ 8bits-Value=02)
 stw r8,r9
    #r5=2 <- MEM[256] = 2
@@ -20,7 +20,7 @@ lsli r7, 8
    #r7+2 => 258
 addi r7,2
 movi r6, 14
-   #258-deci = 102-hex (MEM): 0x0102: 0000 000e
+   #258-deci = 102-hex (MEM): 0x0102: 0002 000e 0000
    #(16 bit Group: 8bits-Adresse[258:00] _ 8bits-Value=0e)
 stw r6,r7
 
@@ -35,7 +35,7 @@ movi r5, 1
 lsli r5, 5
    #r5=31
 subi r5, 1
-   #260-deci = 104-hex (MEM): 0x0100: 0000 0000 001f
+   #260-deci = 104-hex (MEM): 0x0100: 0002 000e 001f
    #(16 bit Group: 8bits-Adresse[260:00] _ 8bits-Value=1f)
 stw r5,r10
 
@@ -57,9 +57,10 @@ loop:
 cmpeq r3, r1
 bt end
 
-   #r0=258
+   #(Pointer)r0=258
+    #258-deci = 102-hex (MEM): 0x0102: ... 000e
 addi r0, 2
-   #r4=???
+   #r4=14
 ldw r4, r0
 subi r3, 1
 addu r2, r4

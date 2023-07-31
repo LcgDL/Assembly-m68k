@@ -29,7 +29,7 @@ movi r10, 1
    #1*2^8 => r10=256
 lsli r10, 8
    #r10=260
-addi r10, 4v
+addi r10, 4
 movi r5, 1
    #1*2^5 => r5=32
 lsli r5, 5

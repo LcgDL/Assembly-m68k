@@ -59,9 +59,10 @@ cmpeq r3, r1
 bt end
    #(Pointer)r0=[258] => 14 (000e)
     #258-deci = 102-hex (MEM): 0x0100: 0002 000e 001f
-     #(Pointer)r0=[260]...
+     #(Pointer)r0=[260] =>31 (101101) ...
 addi r0, 2
    #r4=14 <= r0=[258]
+    #r4=14 <= r0=[260]
 ldw r4, r0
 subi r3, 1
    #0+14

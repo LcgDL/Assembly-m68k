@@ -20,6 +20,7 @@ cmpne r2,r10
 bf end
    #r9=12
 mov r9,r2
+   # r9=0 (12=1100 => ...1 => 0 AND 1 = 0)
 andi r9,1
    #if
 cmpeq r9,r10

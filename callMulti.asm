@@ -15,7 +15,7 @@ movi r0,0
 movi r10,0
 
 while:
-   #?(r2[12]==r10[0]) 
+   #?(r2[12]!=r10[0]) 
 cmpne r2,r10
 bf end
    #r9=12

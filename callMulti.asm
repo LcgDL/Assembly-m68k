@@ -22,7 +22,7 @@ bf end
 mov r9,r2
    # r9=0 (12=1100 => ...1 => 0 AND 1 = 0)
 andi r9,1
-   #if
+   #?(r9[0]==r10[0]) 
 cmpeq r9,r10
 bf else
 lsli r1,1

@@ -25,8 +25,9 @@ andi r9,1
    #?(r9[0]==r10[0]) 
 cmpeq r9,r10
 bf else
-   #r1=20 =>2^1 * 10
+   #r1= 20 => 10 * 2^1
 lsli r1,1
+   #r2= 6  => 12 / 2^1
 lsri r2,1
 br while
 

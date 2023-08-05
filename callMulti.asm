@@ -30,7 +30,7 @@ andi r9,1
 cmpeq r9,r10
 bf else
    #r1= 20 => 10 * 2^1
-    #
+    #r1= 40 => 20 * 2^1
 lsli r1,1
    #r2= 6  => 12 / 2^1
 lsri r2,1

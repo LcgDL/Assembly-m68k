@@ -33,6 +33,7 @@ bf else
     #r1= 40 => 20 * 2^1
 lsli r1,1
    #r2= 6  => 12 / 2^1
+    #r2= 3  => 6 / 2^1
 lsri r2,1
 br while
 

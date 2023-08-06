@@ -30,7 +30,7 @@ mov r9,r2
 andi r9,1
    #?(r9[0]==r10[0])
     #?(r9[0]==r10[0])
-     #
+     #?(r9[1]==r10[0])
 cmpeq r9,r10
 bf else
    #r1= 20 => 10 * 2^1
@@ -42,8 +42,11 @@ lsri r2,1
 br while
 
 else:
+   #r0=40
 addu r0,r1
+   #r1= 80 => 40 * 2^1
 lsli r1,1
+   #r2= 1 => 3 / 2^1
 lsri r2,1
 br while
 

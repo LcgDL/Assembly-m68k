@@ -47,9 +47,10 @@ br while
 
 else:
    #r0=40
-    #
+    #r0=60
 addu r0,r1
    #r1= 80 => 40 * 2^1
+    #
 lsli r1,1
    #r2= 1 => 3 / 2^1
 lsri r2,1

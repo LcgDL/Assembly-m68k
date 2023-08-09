@@ -5,6 +5,7 @@ movi r3,5
 br mul
 
 continue:
+   # r0=60 + r3= 
 addu r0,r3
    # Result: r0=125
 halt
@@ -19,7 +20,7 @@ while:
     #?(r2[6]!=r10[0])
      #?(r2[3]!=r10[0])
       #?(r2[1]!=r10[0])
-       #?(r2[0]!=r10[0])###
+       #?(r2[0]!=r10[0])
 cmpne r2,r10
 bf end
    #r9=12

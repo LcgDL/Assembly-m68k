@@ -4,9 +4,10 @@ movi r8,6
 call fib
 halt
 
-#Call-Stack 
+# Call-Stack 
 fib:
 # Stack Pointer
+   #r4=65535 
 movi r14, 0
 subi r14, 1
 # Help registers

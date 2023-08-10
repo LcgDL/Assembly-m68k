@@ -1,4 +1,5 @@
-# Calling 'fun' with r8=6
+# Calling 'fib' with r8=6
+   # Solution r8=8
 movi r8,6
 call fib
 halt

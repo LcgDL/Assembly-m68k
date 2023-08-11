@@ -23,6 +23,7 @@ cmpeq r8, r2
 bt sonst 
 
 # Push - Return address
+   #r14=65533
 subi r14, 2
 stw r15, r14, 0
 # write r8-Wert in r14 

@@ -7,7 +7,7 @@ halt
 # Call-Stack 
 fib:
 # Stack Pointer
-   #r4=65535 
+   #r14=65535 
 movi r14, 0
 subi r14, 1
 # Help registers

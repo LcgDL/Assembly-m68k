@@ -15,8 +15,10 @@ movi r1, 1
 movi r2, 2
 
 if:
+   #6=1 F
 cmpeq r8, r1
 bt sonst
+   #6=2 F
 cmpeq r8, r2
 bt sonst 
 

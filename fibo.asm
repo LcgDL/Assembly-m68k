@@ -25,14 +25,13 @@ bt sonst
 # Push - Return address
    #r14=65533
 subi r14, 2
-   #r15-Address -> r14[MEM]
+   #r15-Addr -> r14[MEM]
 stw r15, r14, 0
-# write r8-Wert in r14 
    #r14=65531
 subi r14, 2
    #r8-Wert -> r14[MEM]
 stw r8, r14, 0
-# call (n-1)
+   # call (n-1) : r8=5 ###
 subi r8, 1
 call if
 

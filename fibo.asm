@@ -16,9 +16,11 @@ movi r2, 2
 
 if:
    #6=1 F
+    #5=1 F
 cmpeq r8, r1
 bt sonst
    #6=2 F
+    #5=2 F
 cmpeq r8, r2
 bt sonst 
 
@@ -31,7 +33,7 @@ stw r15, r14, 0
 subi r14, 2
    #r8-Wert -> r14[MEM]
 stw r8, r14, 0
-   # call (n-1) : r8=5 ###
+   # call (n-1) : r8=5
 subi r8, 1
 call if
 

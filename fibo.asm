@@ -17,20 +17,23 @@ movi r2, 2
 if:
    #6=1 F
     #5=1 F
-     #4=1 F ###
+     #4=1 F 
 cmpeq r8, r1
 bt sonst
    #6=2 F
     #5=2 F
+     #4=2 F
 cmpeq r8, r2
 bt sonst 
 
 # Push - Return address
    #r14=65533
     #r14=65529
+     #r14=65525
 subi r14, 2
    #r15-Addr -> r14[MEM-65533]
     #r15-Addr -> r14[MEM-65529]
+     #
 stw r15, r14, 0
    #r14=65531
     #r14=65527

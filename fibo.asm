@@ -17,7 +17,8 @@ movi r2, 2
 if:
    #6=1 F
     #5=1 F
-     #4=1 F 
+     #4=1 F
+      #
 cmpeq r8, r1
 bt sonst
    #6=2 F
@@ -33,16 +34,19 @@ bt sonst
 subi r14, 2
    #r15-Addr -> r14[MEM-65533]
     #r15-Addr -> r14[MEM-65529]
-     #
+     #r15-Addr -> r14[MEM-65525]
 stw r15, r14, 0
    #r14=65531
     #r14=65527
+     #r14=65523
 subi r14, 2
    #r8-Wert -> r14[MEM-65531]
     #r8-Wert -> r14[MEM-65527]
+     #r8-Wert -> r14[MEM-65523]
 stw r8, r14, 0
    # r8=5 : call (n-1)
     # r8=4 : call (n-1)
+     # r8=3 : call (n-1)
 subi r8, 1
 call if
 

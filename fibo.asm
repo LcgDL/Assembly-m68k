@@ -19,13 +19,14 @@ if:
     #5=1 F
      #4=1 F
       #3=1 F
-       #
+       #2=1 F
 cmpeq r8, r1
 bt sonst
    #6=2 F
     #5=2 F
      #4=2 F
       #3=2 F
+       #2=2 T
 cmpeq r8, r2
 bt sonst 
 
@@ -88,5 +89,6 @@ addu r8, r4
 jmp r15
 
 sonst:
+   #
 movi r8, 1
 jmp r15 

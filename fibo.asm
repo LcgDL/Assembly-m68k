@@ -1,6 +1,7 @@
 # Calling 'fib' with r8=6
    # Solution r8=8
 movi r8,6
+   #call:0
 call fib
 halt
 
@@ -56,9 +57,14 @@ stw r8, r14, 0
      # r8=3 : call (n-1)
       # r8=2 : call (n-1)
 subi r8, 1
+   #call:1
+    #call:2
+     #call:3
+      #call:4
 call if
 
 # r8? temporarily save: cache
+   #
 mov r5, r8
 # write top value of r14 back to r8
 ldw r8, r14, 0
@@ -91,4 +97,5 @@ jmp r15
 sonst:
    # r8=1
 movi r8, 1
+   #call:4 (after)
 jmp r15 

@@ -89,6 +89,6 @@ addu r8, r4
 jmp r15
 
 sonst:
-   #
+   # r8=1
 movi r8, 1
 jmp r15 

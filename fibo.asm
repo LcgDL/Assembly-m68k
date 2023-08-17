@@ -37,8 +37,8 @@ bt sonst
      #r14=65525
       #r14=65521
 subi r14, 2
-   #r15-Addr -> r14[MEM-65533]
-    #r15-Addr -> r14[MEM-65529]
+   #r15-Addr -> r14[MEM-65533]=4
+    #r15-Addr -> r14[MEM-65529]=34
      #r15-Addr -> r14[MEM-65525]=34
       #r15-Addr -> r14[MEM-65521]=34
 stw r15, r14, 0

@@ -39,18 +39,18 @@ bt sonst
 subi r14, 2
    #r15-Addr -> r14[MEM-65533]
     #r15-Addr -> r14[MEM-65529]
-     #r15-Addr -> r14[MEM-65525]
-      #r15-Addr -> r14[MEM-65521]
+     #r15-Addr -> r14[MEM-65525]=34
+      #r15-Addr -> r14[MEM-65521]=34
 stw r15, r14, 0
    #r14=65531
     #r14=65527
      #r14=65523
       #r14=65519
 subi r14, 2
-   #r8-Wert -> r14[MEM-65531]
-    #r8-Wert -> r14[MEM-65527]
-     #r8-Wert -> r14[MEM-65523]
-      ##r8-Wert -> r14[MEM-65519]
+   #r8-Wert -> r14[MEM-65531]=6
+    #r8-Wert -> r14[MEM-65527]=5
+     #r8-Wert -> r14[MEM-65523]=4
+      ##r8-Wert -> r14[MEM-65519]=3
 stw r8, r14, 0
    # r8=5 : call (n-1)
     # r8=4 : call (n-1)
@@ -63,10 +63,11 @@ subi r8, 1
       #call:4
 call if
 
-# r8? temporarily save: cache
-   #
+# temporarily save: cache
+   # r5=1
 mov r5, r8
 # write top value of r14 back to r8
+   # 
 ldw r8, r14, 0
 # ??? Write buffer (r15) to r14
 subi r14, 2

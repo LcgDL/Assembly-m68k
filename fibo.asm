@@ -21,6 +21,7 @@ if:
      #4=1 F
       #3=1 F
        #2=1 F
+        #59	14	cmpeq r8, r1 ###
 cmpeq r8, r1
 bt sonst
    #6=2 F
@@ -76,7 +77,9 @@ subi r14, 2
 stw r5, r14, 0
 
 #call (n-2)
+   #r8=1
 subi r8, 2
+   #call:5
 call if
 
 # r8? temporarily save: cache

@@ -98,5 +98,5 @@ jmp r15
 sonst:
    # r8=1
 movi r8, 1
-   #call:4 (after)
+   #call:34 (after) #r15-Addr -> r14[MEM-65521]=34
 jmp r15 

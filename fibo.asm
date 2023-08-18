@@ -50,7 +50,7 @@ subi r14, 2
    #r8-Wert -> r14[MEM-65531]=6
     #r8-Wert -> r14[MEM-65527]=5
      #r8-Wert -> r14[MEM-65523]=4
-      ##r8-Wert -> r14[MEM-65519]=3
+      #r8-Wert -> r14[MEM-65519]=3
 stw r8, r14, 0
    # r8=5 : call (n-1)
     # r8=4 : call (n-1)
@@ -67,10 +67,12 @@ call if
    # r5=1
 mov r5, r8
 # write top value of r14 back to r8
-   ###
+   #r8=3 # r14-MEM[65519] = 3
 ldw r8, r14, 0
 # ??? Write buffer (r15) to r14
+   #r14=65517
 subi r14, 2
+   #r5-Wert -> r14[MEM-65517]=1
 stw r5, r14, 0
 
 #call (n-2)
@@ -98,5 +100,5 @@ jmp r15
 sonst:
    # r8=1
 movi r8, 1
-   #call:34 (after) #r15-Addr -> r14[MEM-65521]=34
+   #call:4 (after-if) #r15-Addr -> r14[MEM-65521]=34
 jmp r15 

@@ -21,7 +21,7 @@ if:
      #4=1 F
       #3=1 F
        #2=1 F
-        #1=1 T  ################
+        #1=1 T  
 cmpeq r8, r1
 bt sonst
    #6=2 F
@@ -102,6 +102,7 @@ jmp r15
 
 sonst:
    # r8=1
+    # r8, 1
 movi r8, 1
    #call:4 (after-if) #r15-Addr -> r14[MEM-65521]=34
 jmp r15 

@@ -58,7 +58,7 @@ stw r8, r14, 0
      # r8=3 : call (n-1)
       # r8=2 : call (n-1)
 subi r8, 1
-   #call:1
+   #call:1 = ? r15?
     #call:2
      #call:3
       #call:4

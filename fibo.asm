@@ -1,7 +1,8 @@
 # Calling 'fib' with r8=6
    # Solution r8=8
 movi r8,6
-   #call:0 #return next to this call
+   #call:0 #return next to this call: halt #jmp r15
+   #call saves its own address + 2
 call fib
 halt
 
@@ -58,7 +59,7 @@ stw r8, r14, 0
      # r8=3 : call (n-1)
       # r8=2 : call (n-1)
 subi r8, 1
-   #call:1 = ? r15?
+   #call:1 #return next to this call: mov r5, r8 #jmp r15
     #call:2
      #call:3
       #call:4

@@ -1,7 +1,7 @@
 # Calling 'fib' with r8=6
    # Solution r8=8
 movi r8,6
-   #call:0
+   #call:0 #return next to this call
 call fib
 halt
 

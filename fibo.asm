@@ -60,9 +60,9 @@ stw r8, r14, 0
       # r8=2 : call (n-1)
 subi r8, 1
    #call:1 #return next to this call: mov r5, r8 #jmp r15
-    #call:2
-     #call:3
-      #call:4
+    #call:2 #return next to this call: mov r5, r8 #jmp r15
+     #call:3 #return next to this call: mov r5, r8 #jmp r15
+      #call:4 #return next to this call: mov r5, r8 #jmp r15
 call if
 
 # temporarily save: cache
@@ -80,10 +80,11 @@ stw r5, r14, 0
 #call (n-2)
    #r8=1
 subi r8, 2
-   #call:5
+   #call:5 #return next to this call: mov r4, r8 #jmp r15
 call if
 
 # r8? temporarily save: cache
+   #
 mov r4, r8
 
 # ??? Load value in r5
@@ -105,6 +106,6 @@ sonst:
    # r8=1
     # r8=1
 movi r8, 1
-   #call:4 (after: 1. call if) #r15-Addr -> r14[MEM-65521]=34
-    #call:5 (after: 2. call if) #r15-Addr -> r14[MEM-65519]=???
+   #call:4 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34
+    #call:5 (after: (n-2) call if) #r15-Addr -> mov r4, r8 - 46
 jmp r15 

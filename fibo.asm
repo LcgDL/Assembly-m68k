@@ -94,12 +94,15 @@ ldw r5, r14, 0
 addi r14, 2
    #r8=3
 ldw r8, r14, 0
-   ###
+   #r14[MEM-65521]=34
 addi r14, 2
 # pop
+   #r15=34
 ldw r15, r14, 0
+   #r14[MEM-65523]=4
 addi r14, 2
 # Write value back to r8
+   ###
 mov r8, r5
 # Result = a+b
 addu r8, r4

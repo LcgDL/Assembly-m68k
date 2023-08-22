@@ -71,7 +71,7 @@ mov r5, r8
 # write top value of r14 back to r8
    #r8=3 # r14-MEM[65519] = 3
 ldw r8, r14, 0
-# ??? Write buffer (r15) to r14
+# Write buffer (r15) to r14
    #r14=65517
 subi r14, 2
    #r5-Wert -> r14[MEM-65517]=1
@@ -90,9 +90,11 @@ mov r4, r8
 # Load value in r5
    #r5=1
 ldw r5, r14, 0
+   #r14[MEM-65519]=3
 addi r14, 2
-# ???
+   #r8=3
 ldw r8, r14, 0
+   ###
 addi r14, 2
 # pop
 ldw r15, r14, 0

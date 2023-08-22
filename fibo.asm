@@ -65,7 +65,7 @@ subi r8, 1
       #call:4 #return next to this call: mov r5, r8 #jmp r15
 call if
 
-# temporarily save: cache
+# temporarily save: cache #from jmp r15: sonst
    # r5=1
 mov r5, r8
 # write top value of r14 back to r8
@@ -80,14 +80,15 @@ stw r5, r14, 0
 #call (n-2)
    #r8=1
 subi r8, 2
-   #call:5 #return next to this call: mov r4, r8 #jmp r15
+   #call:5 #return next to this call: mov r4, r8 #jmp r15:sonst
 call if
 
-# r8? temporarily save: cache
-   #
+# r8 temporarily save: cache #from jmp r15
+   #r4=1
 mov r4, r8
 
-# ??? Load value in r5
+# Load value in r5
+   #r5=1
 ldw r5, r14, 0
 addi r14, 2
 # ???

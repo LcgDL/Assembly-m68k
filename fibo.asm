@@ -67,6 +67,7 @@ call if
 
 # temporarily save: cache #from jmp r15: sonst
    # r5=1
+    ###
 mov r5, r8
 # write top value of r14 back to r8
    #r8=3 # r14-MEM[65519] = 3
@@ -107,12 +108,13 @@ mov r8, r5
 # Result = a+b
    #r8=2
 addu r8, r4
+   #call:3 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34
 jmp r15
 
 sonst:
    # r8=1
     # r8=1
 movi r8, 1
-   #call:4 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34 (Addrese in m68k editor)
-    #call:5 (after: (n-2) call if) #r15-Addr -> mov r4, r8 - 46
+   #call:1 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34 (Addrese in m68k editor)
+    #call:2 (after: (n-2) call if) #r15-Addr -> mov r4, r8 - 46
 jmp r15 

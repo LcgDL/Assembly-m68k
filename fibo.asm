@@ -67,15 +67,18 @@ call if
 
 # temporarily save: cache #from jmp r15: sonst
    # r5=1
-    ###
+    # r5=2
 mov r5, r8
 # write top value of r14 back to r8
    #r8=3 # r14-MEM[65519] = 3
+    #r8=4
 ldw r8, r14, 0
 # Write buffer (r15) to r14
    #r14=65517
+   #r14=65521
 subi r14, 2
    #r5-Wert -> r14[MEM-65517]=1
+   ###
 stw r5, r14, 0
 
 #call (n-2)

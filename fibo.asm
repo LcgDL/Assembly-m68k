@@ -93,10 +93,12 @@ call if
 
 # r8 temporarily save: cache #from jmp r15
    #r4=1
+    #r4=1
 mov r4, r8
 
 # Load value in r5
    #r5=1
+    ###
 ldw r5, r14, 0
    #r14[MEM-65519]=3
 addi r14, 2
@@ -125,4 +127,5 @@ sonst:
 movi r8, 1
    #call:1 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34 (Addrese in m68k editor)
     #call:2 (after: (n-2) call if) #r15-Addr -> mov r4, r8 - 46
+     #call:4 (after: (n-2) call if) #r15-Addr -> mov r4, r8 - 46
 jmp r15 

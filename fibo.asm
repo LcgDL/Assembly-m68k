@@ -98,16 +98,20 @@ mov r4, r8
 
 # Load value in r5
    #r5=1
-    ###
+    #r5=2
 ldw r5, r14, 0
    #r14[MEM-65519]=3
+    #r14=65523
 addi r14, 2
    #r8=3
+    #r8=4
 ldw r8, r14, 0
    #r14[MEM-65521]=34
+    #r14=65525
 addi r14, 2
 # pop
    #r15=34
+    ###
 ldw r15, r14, 0
    #r14[MEM-65523]=4
 addi r14, 2

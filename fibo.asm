@@ -121,9 +121,10 @@ addi r14, 2
 mov r8, r5
 # Result = a+b
    #r8=2
-    ###
+    #r8=3
 addu r8, r4
    #call:3 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34
+    #call:5
 jmp r15
 
 sonst:

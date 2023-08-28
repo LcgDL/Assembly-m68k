@@ -80,10 +80,11 @@ ldw r8, r14, 0
 # Write buffer (r15) to r14
    #r14=65517
     #r14=65521
-     ###
+     #r14=65525
 subi r14, 2
    #r5-Wert -> r14[MEM-65517]=1
-   # r14[]=2
+    # r14[]=2
+    ###
 stw r5, r14, 0
 
 #call (n-2)

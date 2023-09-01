@@ -25,6 +25,7 @@ if:
         #1=1 T  
          #2=1 F
           #3=1 F
+           #2=1 F
 cmpeq r8, r1
 bt sonst
    #6=2 F
@@ -34,6 +35,7 @@ bt sonst
        #2=2 T
         # 2=2 T
          # 3=2 F
+          ###
 cmpeq r8, r2
 bt sonst 
 
@@ -72,7 +74,7 @@ subi r8, 1
     #call:2 #return next to this call: mov r5, r8 #jmp r15
      #call:3 #return next to this call: mov r5, r8 #jmp r15
       #call:4 #return next to this call: mov r5, r8 #jmp r15
-       ###
+       #call:7 #return next to this call: mov r5, r8 #jmp r15
 call if
 
 # temporarily save: cache #from jmp r15: sonst

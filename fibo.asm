@@ -98,13 +98,14 @@ subi r14, 2
    #r5-Wert -> r14[MEM-65517]=1
     # r14[]=2
      # r14[]=3
-      ###
+      # r14[]=1
 stw r5, r14, 0
 
 #call (n-2)
    #r8=1
     #r8=2
      #r8=3
+     ###
 subi r8, 2
    #call:5 #return next to this call: mov r4, r8 #jmp r15:sonst
     #call:6 #to cmpeq r8,r1

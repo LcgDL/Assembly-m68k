@@ -26,7 +26,7 @@ if:
          #2=1 F
           #3=1 F
            #2=1 F
-            ###
+            #1=1 T
 cmpeq r8, r1
 bt sonst
    #6=2 F
@@ -155,6 +155,7 @@ sonst:
     # r8=1
      # r8=1
       # r8=1
+       ###
 movi r8, 1
    #call:1 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34 (Addrese in m68k editor)
     #call:2 (after: (n-2) call if) #r15-Addr -> mov r4, r8 - 46

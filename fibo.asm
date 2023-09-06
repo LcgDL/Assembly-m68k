@@ -117,6 +117,7 @@ call if
 # r8 temporarily save: cache #from jmp r15
    #r4=1
     #r4=1
+     ###
 mov r4, r8
 # Load value in r5
    #r5=1
@@ -161,5 +162,5 @@ movi r8, 1
     #call:2 (after: (n-2) call if) #r15-Addr -> mov r4, r8 - 46
      #call:4 (after: (n-2) call if) #r15-Addr -> mov r4, r8 - 46
       #call:6
-      ###
+      #call:7
 jmp r15 

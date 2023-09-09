@@ -139,10 +139,11 @@ addi r14, 2
 # pop
    #r15=34
     #r15=34
-     ###
+     #r15=46
 ldw r15, r14, 0
    #r14[MEM-65523]=4
     #r14=65527
+     ###
 addi r14, 2
 # Write value back to r8
    #r8=1

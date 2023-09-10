@@ -118,6 +118,7 @@ call if
    #r4=1
     #r4=1
      #r4=1
+     ###
 mov r4, r8
 # Load value in r5
    #r5=1
@@ -157,7 +158,7 @@ mov r8, r5
 addu r8, r4
    #call:3 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34
     #call:5
-    ###
+    #call:8
 jmp r15
 
 sonst:

@@ -118,12 +118,13 @@ call if
    #r4=1
     #r4=1
      #r4=1
-     ###
+     #r4=2
 mov r4, r8
 # Load value in r5
    #r5=1
     #r5=2
      #r5=1
+      ###
 ldw r5, r14, 0
    #r14[MEM-65519]=3
     #r14=65523

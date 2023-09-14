@@ -83,12 +83,14 @@ call if
     # r5=2
      # r5=3
       # r5=1
+       #  r5=5
 mov r5, r8
 # write top value of r14 back to r8
    #r8=3 # r14-MEM[65519] = 3
     #r8=4
      #r8=5
-     #r8=3
+      #r8=3
+       ###
 ldw r8, r14, 0
 # Write buffer (r15) to r14
    #r14=65517
@@ -162,11 +164,12 @@ mov r8, r5
    #r8=2
     #r8=3
      #r8=2
-      ###
+      #r8=5
 addu r8, r4
    #call:3 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34
     #call:5
-    #call:8
+     #call:8
+      #call:9
 jmp r15
 
 sonst:

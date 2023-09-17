@@ -38,7 +38,7 @@ bt sonst
         # 2=2 T
          # 3=2 F
           # 2=2 T
-           ###
+           # 4=2 F
 cmpeq r8, r2
 bt sonst 
 
@@ -48,6 +48,7 @@ bt sonst
      #r14=65525
       #r14=65521
        #r14=65523
+        ###
 subi r14, 2
    #r15-Addr -> r14[MEM-65533]=4
     #r15-Addr -> r14[MEM-65529]=34

@@ -27,7 +27,7 @@ if:
           #3=1 F
            #2=1 F
             #1=1 T
-             ###
+             #1=4 F
 cmpeq r8, r1
 bt sonst
    #6=2 F
@@ -38,6 +38,7 @@ bt sonst
         # 2=2 T
          # 3=2 F
           # 2=2 T
+           ###
 cmpeq r8, r2
 bt sonst 
 

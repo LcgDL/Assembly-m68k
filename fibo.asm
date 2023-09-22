@@ -76,7 +76,7 @@ subi r14, 2
       #r8-Wert -> r14[MEM-65519]=3
        #r8-Wert -> r14[MEM-65521]=3
         #r8-Wert -> r14[MEM-65525]=4
-         ###
+         #r8-Wert -> r14[MEM-65523]=34
 stw r8, r14, 0
    # r8=5 : call (n-1)
     # r8=4 : call (n-1)
@@ -84,6 +84,7 @@ stw r8, r14, 0
       # r8=2 : call (n-1)
        # r8=2 : call (n-1)
         # r8=3 : call (n-1)
+         ###
 subi r8, 1
    #call:1 #return next to this call: mov r5, r8 #jmp r15
     #call:2 #return next to this call: mov r5, r8 #jmp r15

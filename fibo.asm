@@ -92,7 +92,7 @@ subi r8, 1
       #call:4 #return next to this call: mov r5, r8 #jmp r15
        #call:7 #return next to this call: mov r5, r8 #jmp r15
         #call:7 #return next to this call: mov r5, r8 #jmp r15
-         #call:7 #return next to this call: mov r5, r8 #jmp r15
+         #call:7 #jmp r15
 call if
 
 # temporarily save: cache #from jmp r15: sonst

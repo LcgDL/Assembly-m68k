@@ -1,4 +1,3 @@
-
 # Calling 'fib' with r8=6
    # Solution r8=8
 movi r8,6
@@ -84,7 +83,7 @@ stw r8, r14, 0
       # r8=2 : call (n-1)
        # r8=2 : call (n-1)
         # r8=3 : call (n-1)
-         ###
+         # r8=2 
 subi r8, 1
    #call:1 #return next to this call: mov r5, r8 #jmp r15
     #call:2 #return next to this call: mov r5, r8 #jmp r15
@@ -92,6 +91,7 @@ subi r8, 1
       #call:4 #return next to this call: mov r5, r8 #jmp r15
        #call:7 #return next to this call: mov r5, r8 #jmp r15
         #call:7 #return next to this call: mov r5, r8 #jmp r15
+         ###
 call if
 
 # temporarily save: cache #from jmp r15: sonst

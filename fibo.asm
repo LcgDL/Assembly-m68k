@@ -101,7 +101,7 @@ call if
      # r5=3
       # r5=1
        #  r5=5
-        ###
+        # r5=1
 mov r5, r8
 # write top value of r14 back to r8
    #r8=3 # r14-MEM[65519] = 3
@@ -109,6 +109,7 @@ mov r5, r8
      #r8=5
       #r8=3
        # r8=6
+        ###
 ldw r8, r14, 0
 # Write buffer (r15) to r14
    #r14=65517

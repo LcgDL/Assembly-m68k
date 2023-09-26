@@ -105,7 +105,7 @@ call if
 mov r5, r8
 # write top value of r14 back to r8
    #r8=3 # r14-MEM[65519] = 3
-    #r8=4
+    #r8=4Leistungsnachweis
      #r8=5
       #r8=3
        # r8=6
@@ -117,13 +117,14 @@ ldw r8, r14, 0
      #r14=65525
       #r14=65519
        #r14=65529
-        ###
+        #r14=65519
 subi r14, 2
    #r5-Wert -> r14[MEM-65517]=1
     # r14[]=2
      # r14[]=3
       # r14[]=1 
        # 14[]=5
+        ###
 stw r5, r14, 0
 
 #call (n-2)

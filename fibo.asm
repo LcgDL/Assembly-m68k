@@ -42,6 +42,7 @@ bt sonst
            # 4=2 F
             # 3=2 F
              # 2=2 T
+              ###
 cmpeq r8, r2
 bt sonst 
 
@@ -140,7 +141,7 @@ subi r8, 2
      #to cmpeq r8,r1
       #to cmpeq r8,r1
        #to cmpeq r8,r1
-        ###
+        #to cmpeq r8,r1
 call if
 
 # r8 temporarily save: cache #from jmp r15

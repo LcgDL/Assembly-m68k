@@ -148,7 +148,8 @@ call if
    #r4=1
     #r4=1
      #r4=1
-     #r4=2
+      #r4=2
+       ###
 mov r4, r8
 # Load value in r5
    #r5=1
@@ -215,5 +216,5 @@ movi r8, 1
       #call:6
       #call:7
        #call:10
-      ###
+        #call:11
 jmp r15 

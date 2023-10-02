@@ -201,12 +201,13 @@ mov r8, r5
     #r8=3
      #r8=2
       #r8=5
-      ###
+      #r8=2
 addu r8, r4
    #call:3 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34
     #call:5
      #call:8
       #call:9
+       ###
 jmp r15
 
 sonst:

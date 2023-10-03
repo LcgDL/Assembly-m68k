@@ -103,6 +103,7 @@ call if
       # r5=1
        #  r5=5
         # r5=1
+         ###
 mov r5, r8
 # write top value of r14 back to r8
    #r8=3 # r14-MEM[65519] = 3
@@ -207,7 +208,7 @@ addu r8, r4
     #call:5
      #call:8
       #call:9
-       ###
+       #call:12
 jmp r15
 
 sonst:

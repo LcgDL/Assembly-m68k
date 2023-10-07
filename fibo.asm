@@ -43,7 +43,7 @@ bt sonst
             # 3=2 F
              # 2=2 T
               # 1=1 T
-               # 2=1 F
+               # 2=2 T
 cmpeq r8, r2
 bt sonst 
 
@@ -55,7 +55,7 @@ bt sonst
        #r14=65523
         #r14=65527
          #r14=65523
-          ###
+          #
 subi r14, 2
    #r15-Addr -> r14[MEM-65533]=4
     #r15-Addr -> r14[MEM-65529]=34
@@ -226,6 +226,7 @@ sonst:
        # r8=1
         # r8=1 
          # r8=1
+          ###
 movi r8, 1
    #call:1 (after: (n-1) call if) #r15-Addr -> mov r5, r8 - 34 (Addrese in m68k editor)
     #call:2 (after: (n-2) call if) #r15-Addr -> mov r4, r8 - 46

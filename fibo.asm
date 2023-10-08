@@ -158,6 +158,7 @@ call if
      #r4=1
       #r4=2
        #r4=1
+        #r4=1
 mov r4, r8
 # Load value in r5
    #r5=1
@@ -165,6 +166,7 @@ mov r4, r8
      #r5=1
       #r5=3
        #r5=1
+        ###
 ldw r5, r14, 0
    #r14[MEM-65519]=3
     #r14=65523
@@ -235,5 +237,5 @@ movi r8, 1
       #call:7
        #call:10
         #call:11
-         ###
+         #call:13
 jmp r15 

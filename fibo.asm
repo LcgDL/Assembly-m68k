@@ -202,7 +202,7 @@ ldw r15, r14, 0
      #r14=65525
       #r14=65531
        #r14=65525
-        ###
+        #r14=65529
 addi r14, 2
 # Write value back to r8
    #r8=1
@@ -210,6 +210,7 @@ addi r14, 2
      #r8=1
       #r8=3
        #r8=1
+        ###
 mov r8, r5
 # Result = a+b
    #r8=2

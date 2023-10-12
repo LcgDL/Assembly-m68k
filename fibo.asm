@@ -159,6 +159,7 @@ call if
       #r4=2
        #r4=1
         #r4=1
+         ###
 mov r4, r8
 # Load value in r5
    #r5=1
@@ -225,7 +226,7 @@ addu r8, r4
      #call:8
       #call:9
        #call:12
-        ###
+        #call:14
 jmp r15
 
 sonst:
